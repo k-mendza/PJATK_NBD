@@ -1,0 +1,25 @@
+// (za 2pkt) Zestaw zapytań powodujących
+uzupełnienie bazy danych o film Captain America: The First Avenger wraz z uzupełnieniem informacji o reżyserze, scenarzystach i odtwórcach głównych ról (w oparciu o skrócone informacje z IMDB - http://www.imdb.com/title/tt0458339/)
++ zapytanie pokazujące dodany do bazy film wraz odtwórcami głównych ról, scenarzystą i reżyserem.
+Plik SVG ma pokazywać wynik ostatniego zapytania.
+
+// ad. 1
+CREATE (movie:Movie {title:"Captain America: The First Avenger", released: 2011, tagline:"When patriots become heroes"}),
+    (sam:Person {name:"Samuel L. Jackson", born:1948}),
+    (chrisEvans:Person {name:"Chris Evans", born:1981}),
+    (joe:Person {name:"Joe Johnston", born:1950}),
+    (chrisMarkus:Person {name:"Christopher Markus", born:1970}),
+    (stephen:Person {name:"Stephen McFeely", born:1969}),
+    (sam)-[:ACTED_IN {roles:['Nick Fury']}]->(movie),
+    (chrisEvans)-[:ACTED_IN {roles:['Captain America', 'Steve Rogers']}]->(movie),
+    (joe)-[:DIRECTED]->(movie),
+    (chrisMarkus)-[:WROTE]->(movie),
+    (stephen)-[:WROTE]->(movie);
+// ad. 1
+MATCH (hugo:Person), (m:Movie)
+WHERE hugo.name="Hugo Weaving" AND m.title="Captain America: The First Avenger"
+CREATE (hugo)-[:ACTED_IN {roles: ["Johann Schmidt", "Red Skull"]}]->(m)
+
+// ad. 2
+MATCH (movie: Movie {title:"Captain America: The First Avenger"})<-[role:WROTE|DIRECTED|ACTED_IN]-(person:Person)
+RETURN movie, role, person

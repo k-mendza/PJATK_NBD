@@ -1,0 +1,4 @@
+// Wszystkie filmy osób, które grały w Matrix
+
+MATCH (p:Person)-[:ACTED_IN]->(matrix:Movie {title:"The Matrix"})
+RETURN p,matrix

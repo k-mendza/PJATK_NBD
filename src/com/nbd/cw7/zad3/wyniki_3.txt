@@ -1,0 +1,13 @@
+$ curl -XPUT \
+>   -i \
+>   -H "Content-Type: application/json" \
+>   -d '{"firstName":"Jan", "lastName":"Kowalski", "age": 33, "rating": 10, "email":"kowalski@gmail.com"}' \
+>   http://localhost:8098/buckets/s22188/keys/1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    97    0     0  100    97      0  12125 --:--:-- --:--:-- --:--:-- 12125HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Fri, 11 Jun 2021 20:14:15 GMT
+Content-Type: application/json
+Content-Length: 0

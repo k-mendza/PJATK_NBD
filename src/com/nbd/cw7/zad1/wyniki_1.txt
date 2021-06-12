@@ -1,0 +1,55 @@
+$ curl -XPUT \
+>   -i \
+>   -H "Content-Type: application/json" \
+>   -d '{"firstName":"Jan", "lastName":"Kowalski", "age": 33, "rating": 10}' \
+>   http://localhost:8098/buckets/s22188/keys/1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    67    0     0  100    67      0   8375 --:--:-- --:--:-- --:--:--  9571HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Fri, 11 Jun 2021 20:03:57 GMT
+Content-Type: application/json
+Content-Length: 0
+
+$ curl -XPUT \
+>   -i \
+>   -H "Content-Type: application/json" \
+>   -d '{"firstName":"Michal", "lastName":"Krakowski", "age": 22, "rating": 9.5}' \
+>   http://localhost:8098/buckets/s22188/keys/2
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    72    0     0  100    72      0   3600 --:--:-- --:--:-- --:--:--  3600HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Fri, 11 Jun 2021 20:05:46 GMT
+Content-Type: application/json
+Content-Length: 0
+
+$ curl -XPUT \
+>   -i \
+>   -H "Content-Type: application/json" \
+>   -d '{"firstName":"Mariola", "lastName":"Warszawska", "age": 24, "rating": 9.0}' \
+>   http://localhost:8098/buckets/s22188/keys/3
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    74    0     0  100    74      0   4111 --:--:-- --:--:-- --:--:--  4352HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Fri, 11 Jun 2021 20:06:13 GMT
+Content-Type: application/json
+Content-Length: 0
+
+$ curl -XPUT \
+>   -i \
+>   -H "Content-Type: application/json" \
+>   -d '{"firstName":"Zuzanna", "lastName":"Poznanska", "age": 26, "rating": 9.7}' \
+>   http://localhost:8098/buckets/s22188/keys/4
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    73    0     0  100    73      0   4294 --:--:-- --:--:-- --:--:--  4294HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Fri, 11 Jun 2021 20:06:29 GMT
+Content-Type: application/json
+Content-Length: 0

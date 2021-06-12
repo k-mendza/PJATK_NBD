@@ -1,0 +1,82 @@
+[
+  {
+    "_id": "AFN",
+    "totalBalance": 677925.57
+  },
+  {
+    "_id": "AMD",
+    "totalBalance": 628234.91
+  },
+  {
+    "_id": "AWG",
+    "totalBalance": 7282.73
+  },
+  {
+    "_id": "BWP",
+    "totalBalance": 146972.04
+  },
+  {
+    "_id": "CNY",
+    "totalBalance": 27776263.33
+  },
+  {
+    "_id": "EGP",
+    "totalBalance": 538164.28
+  },
+  {
+    "_id": "EUR",
+    "totalBalance": 16913519.13
+  },
+  {
+    "_id": "FJD",
+    "totalBalance": 9321.43
+  },
+  {
+    "_id": "FKP",
+    "totalBalance": 5118.97
+  },
+  {
+    "_id": "HKD",
+    "totalBalance": 23023.02
+  },
+  {
+    "_id": "KPW",
+    "totalBalance": 227902.01
+  },
+  {
+    "_id": "LRD",
+    "totalBalance": 54883.45
+  },
+  {
+    "_id": "MKD",
+    "totalBalance": 446949.89
+  },
+  {
+    "_id": "MMK",
+    "totalBalance": 226778.17
+  },
+  {
+    "_id": "MYR",
+    "totalBalance": 671978.45
+  },
+  {
+    "_id": "NPR",
+    "totalBalance": 146606.65
+  },
+  {
+    "_id": "RON",
+    "totalBalance": 11557.6
+  },
+  {
+    "_id": "RWF",
+    "totalBalance": 43299.96
+  },
+  {
+    "_id": "SEK",
+    "totalBalance": 3738579.57
+  },
+  {
+    "_id": "ZWL",
+    "totalBalance": 147943.58
+  }
+]

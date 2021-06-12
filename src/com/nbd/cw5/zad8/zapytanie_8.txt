@@ -1,0 +1,4 @@
+// Listę filmów, w których grał zarówno Hugo Weaving jak i Keanu Reeves
+
+MATCH (hugo:Person{name:'Hugo Weaving'})-[:ACTED_IN]->(m)<-[:ACTED_IN]-(keanu:Person{name:"Keanu Reeves"})
+RETURN m.title

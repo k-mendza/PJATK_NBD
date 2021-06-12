@@ -1,0 +1,15 @@
+$ curl -i -XGET http://localhost:8098/buckets/s22188/keys/TBgsQJiSHSOb3i34cbIpleUNqVd
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    23  100    23    0     0   2875      0 --:--:-- --:--:-- --:--:--  2875HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI85eb6EudZ/hRBhBIZ81gZjCIsbvFlAQA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s22188>; rel="up"
+Last-Modified: Fri, 11 Jun 2021 21:57:06 GMT
+ETag: "1Tj9Q5QB1AR9gjEb2in9WO"
+Date: Fri, 11 Jun 2021 22:00:45 GMT
+Content-Type: application/json
+Content-Length: 23
+
+{"firstName":"Martyna"}

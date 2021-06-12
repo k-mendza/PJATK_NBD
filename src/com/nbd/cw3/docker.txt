@@ -1,0 +1,10 @@
+Instrukcja wgrywania jsona do mongo na docker:
+
+// kopiowanie pliku do kontenera
+docker cp .\cwiczenia2.json f09d40cf237e:/tmp/cwiczenia2.json
+// kopiowanie danych z json do mongo
+docker exec -it f09d40cf237e mongoimport --file /tmp/cwiczenia2.json --db nbd --jsonArray -c people --username user --password password --authenticationDatabase admin
+
+// pierwsza rzecz po zalogowaniu do consoli MongoDB
+
+use nbd

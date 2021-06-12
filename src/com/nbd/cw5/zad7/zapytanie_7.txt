@@ -1,0 +1,6 @@
+// Listę osób, które napisały scenariusz filmu, które wyreżyserowały
+wraz z tytułami takich filmów (koniunkcja – ten sam autor scenariusza i reżyser)
+
+MATCH (director:Person)-[:DIRECTED]->(m)<-[:WROTE]-(writer:Person)
+WHERE director=writer
+RETURN director.name, m.title

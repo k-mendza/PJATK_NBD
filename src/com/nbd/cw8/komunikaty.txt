@@ -1,0 +1,3 @@
+b'{"firstName": "Marian", "lastName": "Gdanski", "age": 45, "rating": 5}'
+b'{"firstName": "Bartosz", "lastName": "Lublinski", "age": 34, "rating": 8.7}'
+b'not found\n'

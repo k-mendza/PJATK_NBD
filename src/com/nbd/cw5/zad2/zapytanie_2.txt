@@ -1,0 +1,4 @@
+// Wszystkie filmy, w których grał Hugo Weaving
+
+MATCH (hugo:Person {name: "Hugo Weaving"})-[:ACTED_IN]->(hugoMovies)
+RETURN hugo,hugoMovies
