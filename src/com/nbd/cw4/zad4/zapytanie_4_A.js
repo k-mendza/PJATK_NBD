@@ -1,5 +1,6 @@
 // Średnie, minimalne i maksymalne BMI (waga/wzrost^2) dla osób w bazie, w podziale na narodowości;
 
+// Wyniki z DataGrip
 db.people.aggregate({
     $group: {
         _id: "$nationality",
@@ -15,16 +16,4 @@ db.people.aggregate({
     }
 })
 
-db.people.mapReduce(
-    function() {
-        emit(this.job, this.job)
-    },
-    function(key, value) {
-        return value.length
-    },
-    {
-        out:{
-            inline: 1
-        }
-    }
-)
+

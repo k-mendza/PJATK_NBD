@@ -1,5 +1,6 @@
 // Średnia i łączna ilość środków na kartach kredytowych kobiet narodowości polskiej w podziale na waluty
 
+// Wyniki z DataGrip
 db.people.aggregate([
     {
         $match: {
@@ -18,3 +19,5 @@ db.people.aggregate([
         }
     }
 ])
+
+
