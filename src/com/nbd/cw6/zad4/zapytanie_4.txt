@@ -1,0 +1,5 @@
+// Uszereguj porty lotnicze według ilości rozpoczynających się w nich lotów
+
+MATCH (flight:Flight)-[:ORIGIN]->(airport:Airport)
+RETURN airport, COUNT(flight) AS flightStartNo
+ORDER BY flightStartNo DESC

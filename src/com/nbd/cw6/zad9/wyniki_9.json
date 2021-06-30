@@ -1,0 +1,10 @@
+﻿[
+  {
+    "flight.airline": "19977",
+    "count(DISTINCT connection.name)": 50
+  },
+  {
+    "flight.airline": "20304",
+    "count(DISTINCT connection.name)": 37
+  }
+]

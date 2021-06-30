@@ -1,0 +1,8 @@
+// Znajdź najtańszą trasę łączącą 3 różne porty lotnicze
+
+MATCH connection = (firstAirport:Airport)-[:CONN]->(secondAirport:Airport)-[:CONN]->(thirdAirport:Airport)
+WITH *, connection AS connection, reduce (accumulator = 0, rel IN relationships(connection) | accumulator + rel.price) AS totalPrice
+WHERE firstAirport <> secondAirport AND secondAirport <> thirdAirport AND thirdAirport <> firstAirport
+RETURN connection, totalPrice
+ORDER BY totalPrice ASC
+LIMIT 1

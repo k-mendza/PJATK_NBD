@@ -1,0 +1,8 @@
+// Znajdź najtańsze połączenie z Los Angeles (LAX) do Dayton (DAY)
+
+MATCH connection = (lax:airport{name:'LAX'})-[c:conn*1..5]->(dayton:airport{name:'DAY'})
+WITH *, reduce (accumulator = 0, rel IN relationships(connection) | accumulator + rel.price) AS totalPrice
+RETURN connection, totalPrice
+ORDER BY totalPrice ASC limit 1;
+
+// brak wyników
